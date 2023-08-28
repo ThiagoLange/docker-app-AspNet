@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  app:
+    image: thiagolange/conversao-peso:latest
+    build:
+      dockerfile: Dockerfile
+      context: ./conversao-peso/ConversaoPeso.Web
+    ports:
+    - 8080:80
